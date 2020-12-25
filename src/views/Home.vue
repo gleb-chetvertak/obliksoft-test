@@ -1,18 +1,25 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  .home
+    os-notifications
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+
+import osNotifications from '@/components/osNotifications.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    osNotifications,
   },
 };
 </script>
+
+<style lang="scss">
+
+.home {
+  padding: 80px 50px 30px 200px;
+  background-color: #f1f2f7;
+}
+
+</style>
